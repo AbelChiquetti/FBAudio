@@ -1,0 +1,23 @@
+{
+  "name": "FB Audio - Fanatics Bass",
+  "short_name": "FB Audio",
+  "description": "Subwoofers de alta qualidade e performance para som automotivo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#DC2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/logo-vermelho.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo-vermelho.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "shopping", "music"]
+}
