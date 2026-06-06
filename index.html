@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Feito por https://www.linkedin.com/in/abel-chiquetti -->
@@ -45,20 +45,57 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Subwoofers de Alta Performance</h1>
-            <p class="hero-subtitle">Potência e qualidade para seu som automotivo</p>
+    <!-- Lineup Hero -->
+    <section class="lineup-hero fade-in">
+        <div class="container lineup-hero-inner">
+            <div class="lineup-hero-media">
+                <picture>
+                    <source srcset="assets/img/linha.png" type="image/webp">
+                    <img src="assets/img/linha.png" alt="Linha completa de subwoofers FB Audio alinhados" width="645" height="387" loading="eager" fetchpriority="high">
+                </picture>
+                <div class="lineup-hero-overlay">
+                    <h1 class="lineup-hero-title">Monte seu sistema perfeito</h1>
+                </div>
+            </div>
+            <div class="lineup-hero-bottom">
+                <h2 class="lineup-hero-subtitle">Combine e escolha seu sub</h2>
+                <p class="lineup-hero-text">De 250W a 3000W RMS — uma linha completa para cada tipo de sistema automotivo. Qualidade FB Audio do compacto ao extremo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Carousel -->
+    <section class="showcase" aria-roledescription="carousel" aria-label="Destaques FB Audio">
+        <div class="container showcase-inner">
+            <div class="showcase-header fade-in">
+                <a href="#products" class="btn-pill btn-pill-outline">Explorar produtos</a>
+                <h1 class="showcase-title">Grave que você sente</h1>
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev" type="button" aria-label="Slide anterior">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-btn carousel-next" type="button" aria-label="Próximo slide">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="heroCarouselTrack" aria-live="polite"></div>
+            </div>
+            <div class="carousel-dots" id="heroCarouselDots" role="tablist" aria-label="Navegação do carrossel"></div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
+            <div class="products-header fade-in">
+                <h2 class="section-title">Nossa linha</h2>
+                <p class="section-subtitle">Escolha o subwoofer ideal para o seu sistema</p>
+            </div>
             <div class="products-grid">
                 <!-- Product 1 -->
-                <article class="product-card" data-product-id="1">
+                <article class="product-card fade-in" data-product-id="1">
                     <div class="product-image">
                         <img src="assets/img/1-fb-sub-250-8-pol.jpg" alt="Subwoofer FBSW 250W 8 Polegadas" loading="lazy">
                     </div>
@@ -70,9 +107,9 @@
                 </article>
 
                 <!-- Product 2 -->
-                <article class="product-card" data-product-id="2">
+                <article class="product-card fade-in" data-product-id="2">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 250W 12 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 250W 12 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 250W</h3>
@@ -82,9 +119,9 @@
                 </article>
 
                 <!-- Product 3 -->
-                <article class="product-card" data-product-id="3">
+                <article class="product-card fade-in" data-product-id="3">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 450W 8 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 450W 8 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 450W</h3>
@@ -94,9 +131,9 @@
                 </article>
 
                 <!-- Product 4 -->
-                <article class="product-card" data-product-id="4">
+                <article class="product-card fade-in" data-product-id="4">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 450W 12 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 450W 12 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 450W</h3>
@@ -106,9 +143,9 @@
                 </article>
 
                 <!-- Product 5 -->
-                <article class="product-card" data-product-id="5">
+                <article class="product-card fade-in" data-product-id="5">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 850W 8 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 850W 8 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 850W</h3>
@@ -118,9 +155,9 @@
                 </article>
 
                 <!-- Product 6 -->
-                <article class="product-card" data-product-id="6">
+                <article class="product-card fade-in" data-product-id="6">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 850W 12 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 850W 12 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 850W</h3>
@@ -130,9 +167,9 @@
                 </article>
 
                 <!-- Product 7 -->
-                <article class="product-card" data-product-id="7">
+                <article class="product-card fade-in" data-product-id="7">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 850W 15 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 850W 15 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 850W</h3>
@@ -142,9 +179,9 @@
                 </article>
 
                 <!-- Product 8 -->
-                <article class="product-card" data-product-id="8">
+                <article class="product-card fade-in" data-product-id="8">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 1600W 12 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 1600W 12 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 1600W</h3>
@@ -154,9 +191,9 @@
                 </article>
 
                 <!-- Product 9 -->
-                <article class="product-card" data-product-id="9">
+                <article class="product-card fade-in" data-product-id="9">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 1600W 15 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 1600W 15 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 1600W</h3>
@@ -166,9 +203,9 @@
                 </article>
 
                 <!-- Product 10 -->
-                <article class="product-card" data-product-id="10">
+                <article class="product-card fade-in" data-product-id="10">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 3000W 12 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 3000W 12 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 3000W</h3>
@@ -178,9 +215,9 @@
                 </article>
 
                 <!-- Product 11 -->
-                <article class="product-card" data-product-id="11">
+                <article class="product-card fade-in" data-product-id="11">
                     <div class="product-image">
-                        <img src="assets/img/exemplo.jpg" alt="Subwoofer FBSW 3000W 15 Polegadas" loading="lazy">
+                        <img src="assets/img/1600-12.webp" alt="Subwoofer FBSW 3000W 15 Polegadas" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>SUBWOOFER FBSW 3000W</h3>
@@ -190,7 +227,7 @@
                 </article>
 
                 <!-- Product 12 -->
-                <article class="product-card" data-product-id="12">
+                <article class="product-card fade-in" data-product-id="12">
                     <div class="product-image">
                         <img src="assets/img/FB10Z850X.png" alt="Subwoofer AAAAAAAAAAA" loading="lazy">
                     </div>
@@ -269,7 +306,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FB Audio. Todos os direitos reservados.</p>
+                <p>&copy; 2026 FB Audio. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

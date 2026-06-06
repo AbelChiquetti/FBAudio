@@ -1,5 +1,5 @@
 // Service Worker for FB Audio
-const CACHE_NAME = 'fb-audio-v1';
+const CACHE_NAME = 'fb-audio-v2';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -9,8 +9,12 @@ const urlsToCache = [
   '/styles.css',
   '/script.js',
   '/assets/logo-vermelho.png',
-  '/assets/img/exemplo.jpg',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap'
+  '/assets/img/1600-12.webp',
+  '/assets/img/galeria1.jpg',
+  '/assets/img/hero/01.webp',
+  '/assets/img/linha.png',
+  '/assets/img/linha.png',
+  'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap'
 ];
 
 // Install Service Worker
